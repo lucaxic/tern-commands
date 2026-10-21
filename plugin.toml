@@ -1,0 +1,13 @@
+schema = 1
+id = "commands"
+name = "Commands"
+version = "0.1.0"
+description = "Run grouped COMMANDS.md buttons in the current tab's terminal."
+host = "src/host.luau"
+window = "src/window.luau"
+styles = ["src/commands.css"]
+
+[[blocks]]
+id = "panel"
+title = "Commands"
+files = ["COMMANDS.md"]

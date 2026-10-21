@@ -1,0 +1,90 @@
+[data-surface='plugin.commands.panel'] {
+	--commands-gap: 8px;
+	gap: var(--commands-gap);
+}
+[data-surface='plugin.commands.panel'] .command-button {
+	align-self: flex-start;
+	border: 1px solid currentColor;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+[data-surface='plugin.commands.panel'] .command-button:hover {
+	opacity: 0.75;
+}
+[data-surface='plugin.commands.panel'] .command-entry {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+}
+[data-surface='plugin.commands.panel'] .command-tooltip {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 10;
+	width: max-content;
+	max-width: 100%;
+	max-height: 50vh;
+	overflow: auto;
+	white-space: pre;
+	margin: 0;
+	padding: 6px 10px;
+	border: 1px solid currentColor;
+	border-radius: 5px;
+	background: var(--pop-bg);
+}
+[data-surface='plugin.commands.panel'] .command-entry:hover > .command-tooltip {
+	display: block;
+}
+[data-surface='plugin.commands.panel'] .command-row {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--commands-gap);
+}
+[data-surface='plugin.commands.panel'] [data-role='command-group'] {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+[data-surface='plugin.commands.panel'] [data-role='command-group'] > .sf-section-body {
+	/* Chevron width + text gap; nested section headers extend 4px left. */
+	margin-left: 0;
+	padding-left: 22px;
+	margin-top: var(--commands-gap);
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	gap: var(--commands-gap);
+}
+[data-surface='plugin.commands.panel'] [data-role='command-group'] > .sf-section-head {
+	font-weight: 600;
+	line-height: 1.35;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+[data-surface='plugin.commands.panel'] [data-mark='heading-1'] > .sf-section-head {
+	font-size: 1.3em;
+}
+[data-surface='plugin.commands.panel'] [data-mark='heading-2'] > .sf-section-head {
+	font-size: 1.22em;
+}
+[data-surface='plugin.commands.panel'] [data-mark='heading-3'] > .sf-section-head {
+	font-size: 1.15em;
+}
+[data-surface='plugin.commands.panel'] [data-mark='heading-4'] > .sf-section-head {
+	font-size: 1.1em;
+}
+[data-surface='plugin.commands.panel'] [data-mark='heading-5'] > .sf-section-head {
+	font-size: 1.05em;
+}
+[data-surface='plugin.commands.panel'] [data-mark='heading-6'] > .sf-section-head {
+	font-size: 1em;
+}
+[data-surface='plugin.commands.panel'] [data-role='command-separator'] {
+	height: 1px;
+	min-height: 1px;
+	flex-shrink: 0;
+	margin: 0;
+	padding: 0;
+}
